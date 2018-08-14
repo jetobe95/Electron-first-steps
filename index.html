@@ -2,12 +2,38 @@
     <head>
         <title>Regim-Electron</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="linkers/get_py.js"></script>
     </head>
     <body>
-        <h1>Jellow mounky</h1>
-        <br>
-        <button onclick="get_py()">Say hi!</button>
+        
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <button class="dropdown-btn">Dropdown 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Page content -->
+        <div class="main">
+            <h1>Jellow mounky</h1>
+            <br>
+            <button onclick="get_py()">Say hi!</button>
+        </div>
+        
+        
+        <!-- Js scripts -->
+        <script src="js/style.js"></script>
+        
     </body>
 </html>
