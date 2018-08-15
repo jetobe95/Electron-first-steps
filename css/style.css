@@ -160,6 +160,7 @@ body{
 }
 #fixedFile{
     width: 200px;
+    height: 200px;
     border-radius: 6px;
 }
 .movingImage{
@@ -170,6 +171,7 @@ body{
 }
 #movingFile{
     width: 200px;
+    height: 200px;
     border-radius: 6px;
 }
 

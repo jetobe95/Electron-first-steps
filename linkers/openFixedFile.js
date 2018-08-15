@@ -14,9 +14,9 @@ function openFixedFile(){
     open.on('message', function(message){
         abspath = message;
         
-        fixed_input = abspath;
+        fixed_input = abspath.substring(0, abspath.length-1);
         
-        loadDCM(fixed_input.substring(0, fixed_input.length-1), fixed_dest, 'fixedFile');
+        loadDCM(fixed_input, fixed_dest, 'fixedFile');
         
     });
     

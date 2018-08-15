@@ -14,9 +14,9 @@ function openMovingFile(){
     open.on('message', function(message){
         abspath = message;
         
-        moving_input = abspath;
+        moving_input = abspath.substring(0, abspath.length-1);
         
-        loadDCM(moving_input.substring(0, moving_input.length-1), moving_dest, 'movingFile');
+        loadDCM(moving_input, moving_dest, 'movingFile');
         
     })
     
