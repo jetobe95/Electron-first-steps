@@ -1,11 +1,3 @@
-function wait(ms){
-   var start = new Date().getTime();
-   var end = start;
-   while(end < start + ms) {
-     end = new Date().getTime();
-  }
-}
-
 
 function loadFixedImage(){
     var python = require('python-shell');
@@ -23,9 +15,11 @@ function loadFixedImage(){
         console.log(message);
     })
     
-    wait(3000);
+    progessBarTimer(2500);
     
-    var fixedFile = document.getElementById('fixedFile');
-    fixedFile.src = "./data/fixed.png";
+    setTimeout(function(){
+        var fixedFile = document.getElementById('fixedFile');
+        fixedFile.src = "./data/fixed.png";
+    }, 2400);
     
 }
