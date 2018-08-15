@@ -14,7 +14,7 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-container">
-                <a>Fixed image</a>
+                <a onclick="loadFixedImage()">Fixed image</a>
                 <a>Moving image</a>
             </div>
             
@@ -47,9 +47,11 @@
             <div class="inputs">
                 <div class="fixedImage">
                     <img src="images/empty.jpg" id="fixedFile">
+                    
                 </div>
                 <div class="movingImage">
                     <img src="images/empty.jpg" id="movingFile">
+                    
                 </div>
             </div>
             
@@ -76,6 +78,7 @@
         <!-- Js scripts -->
         <script src="js/style.js"></script>
         <script src="linkers/get_imreg_py.js"></script>
+        <script src="linkers/load_fixed.js"></script>
         
     </body>
 </html>

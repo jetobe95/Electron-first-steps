@@ -147,7 +147,7 @@ body{
 }
 #fixedFile{
     width: 200px;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 .movingImage{
     background-color: rgba(126, 126, 126, 0.45);
@@ -157,8 +157,9 @@ body{
 }
 #movingFile{
     width: 200px;
-    border-radius: 10px;
+    border-radius: 6px;
 }
+
 
 /* Outputs div */
 .outputs{
