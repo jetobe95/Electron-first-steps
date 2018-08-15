@@ -185,6 +185,44 @@ body{
     overflow-x: hidden;
     position: fixed;
 }
+.outputImage{
+    background-color: rgba(126, 126, 126, 0.45);
+    width: 200px;
+    height: 200px;
+    margin: 40px 0px 0px 50px; 
+}
+#outputFile{
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+}
+.zoomImage{
+    background-color: rgba(126, 126, 126, 0.45);
+    width: 200px;
+    height: 200px;
+    margin: 40px 0px 0px 50px; 
+}
+#zoomFile{
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+}
+.data{
+    width: 110px;
+    height: 200px;
+    position: fixed;
+    margin-left: 100px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 5;
+    right: 0;
+    top: 0;
+    margin: 40px 73px 0px 0px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #111;
+}
+
 
 /* Right bar */
 .others{

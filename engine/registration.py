@@ -1,51 +1,48 @@
-from __future__ import print_function
-from functools import reduce
 
-import SimpleITK as sitk
+import SimpleITK as Sitk
 from PIL import Image
 import sys
 import os
 
 
-pixelType = sitk.sitkFloat32
+fixed_file = sys.argv[1]
+moving_file = sys.argv[2]
 
-fixed_file = '../images/fixed_input.png'
-moving_file = '../images/moving_input.png'
+fixed = Sitk.ReadImage(fixed_file, Sitk.sitkFloat32)
 
-fixed = sitk.ReadImage(fixed_file, sitk.sitkFloat32)
+moving = Sitk.ReadImage(moving_file, Sitk.sitkFloat32)
 
-moving = sitk.ReadImage(moving_file, sitk.sitkFloat32)
-
-R = sitk.ImageRegistrationMethod()
+R = Sitk.ImageRegistrationMethod()
 
 R.SetMetricAsCorrelation()
 
-R.SetOptimizerAsRegularStepGradientDescent(learningRate=2.0,
+R.SetOptimizerAsRegularStepGradientDescent(learningRate=4.0,
                                            minStep=1e-4,
                                            numberOfIterations=500,
                                            gradientMagnitudeTolerance=1e-8)
 R.SetOptimizerScalesFromIndexShift()
 
-tx = sitk.CenteredTransformInitializer(fixed, moving, sitk.Similarity2DTransform())
+tx = Sitk.CenteredTransformInitializer(fixed, moving, Sitk.Similarity2DTransform())
 R.SetInitialTransform(tx)
 
-R.SetInterpolator(sitk.sitkLinear)
+R.SetInterpolator(Sitk.sitkLinear)
 
 outTx = R.Execute(fixed, moving)
 
 if not "SITK_NOSHOW" in os.environ:
 
-    resampler = sitk.ResampleImageFilter()
+    resampler = Sitk.ResampleImageFilter()
     resampler.SetReferenceImage(fixed)
-    resampler.SetInterpolator(sitk.sitkLinear)
+    resampler.SetInterpolator(Sitk.sitkLinear)
     resampler.SetDefaultPixelValue(1)
     resampler.SetTransform(outTx)
 
     out = resampler.Execute(moving)
 
-    simg1 = sitk.Cast(sitk.RescaleIntensity(fixed), sitk.sitkUInt8)
-    simg2 = sitk.Cast(sitk.RescaleIntensity(out), sitk.sitkUInt8)
-    cimg = sitk.Compose(simg1, simg2, simg1//2.+simg2//2.)
+    simg1 = Sitk.Cast(Sitk.RescaleIntensity(fixed), Sitk.sitkUInt8)
+    simg2 = Sitk.Cast(Sitk.RescaleIntensity(out), Sitk.sitkUInt8)
+    cimg = Sitk.Compose(simg1, simg2, simg1 // 2. + simg2 // 2.)
 
-    nda = sitk.GetArrayViewFromImage(cimg)
+    nda = Sitk.GetArrayViewFromImage(cimg)
     my_pil = Image.fromarray(nda)
+    my_pil.save('./data/output.png')
