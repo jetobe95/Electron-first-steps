@@ -3,10 +3,13 @@ function loadFixedImage(){
     var python = require('python-shell');
     var path = require('path')
     
+    var destination = "./data/fixed.png";
+    
     var options = {
         mode: 'text',
         pythonPath:'C:/Users/Fabian/Desktop/Fabi_py_Projects/myvirtualenv/Scripts/python.exe',
-        scriptPath: path.join(__dirname, '/engine/')
+        scriptPath: path.join(__dirname, '/engine/'),
+        args: [destination]
     }
     
     var convert = new python('dcm_to_png.py', options);

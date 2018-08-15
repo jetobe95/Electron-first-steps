@@ -8,8 +8,9 @@ import pydicom
 
 """Convert a DICOM file into a PNG file"""
 try:
+    
     dicom_file_path = './data/test1.dcm'
-    destination = './data/fixed.png'
+    destination = sys.argv[1]      # './data/fixed.png'
     
     ds = pydicom.dcmread(dicom_file_path)
     shape = ds.pixel_array.shape
@@ -24,5 +25,5 @@ try:
     with open(destination, 'wb') as png_file:
         w = png.Writer(shape[1], shape[0], greyscale=True)
         w.write(png_file, image_2d_scaled)
-except():
+except:
     pass
