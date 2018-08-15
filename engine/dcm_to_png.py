@@ -8,9 +8,9 @@ import pydicom
 
 """Convert a DICOM file into a PNG file"""
 try:
-    
-    dicom_file_path = './data/test1.dcm'
     destination = sys.argv[1]      # './data/fixed.png'
+    dicom_file_path = sys.argv[2]
+    # print(destination, dicom_file_path)
     
     ds = pydicom.dcmread(dicom_file_path)
     shape = ds.pixel_array.shape

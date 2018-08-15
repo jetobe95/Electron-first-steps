@@ -15,5 +15,7 @@ try:
                             ),
                            title="Choose an image"
                            )
+    print (path)
+    
 except():
     pass

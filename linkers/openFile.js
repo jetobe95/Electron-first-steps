@@ -10,8 +10,13 @@ function openFile(){
     
     var open = new python('open_file.py', options);
     
+    var abspath = undefined;
     open.on('message', function(message){
-        console.log(message);
+        abspath = message;
+        
+        loadDCM('fixed', 'fixedFile', abspath);
+        
     })
     
+
 }
