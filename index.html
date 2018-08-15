@@ -18,10 +18,15 @@
                     <button class="inputFile">Fixed image
                         <i class="fa fa-plus-square-o"></i>
                     </button>
-                    <input type="file" id="fixedInput"/>
+                    <input type="file" id="fixedInput" accept=".dcm" class="file"/>
                 </div>
                 <!--<a onclick="loadDCM('fixed', 'fixedFile')">Fixed image</a>-->
-                <a onclick="loadDCM('moving', 'movingFile')">Moving image</a>
+                <div class="upload-btn-wrapper">
+                    <button class="inputFile">Moving image
+                        <i class="fa fa-plus-square-o"></i>
+                    </button>
+                    <input type="file" id="movingInput" accept=".dcm" class="file"/>
+                </div>
             </div>
             
             <button class="dropdown-btn">Registration methods 
