@@ -14,7 +14,9 @@ function openFixedFile(){
     open.on('message', function(message){
         abspath = message;
         
-        fixed_input = abspath.substring(0, abspath.length-1);
+        var fixed_input = abspath.substring(0, abspath.length-1);
+        
+        var fixed_dest = "./data/fixed.png";
         
         loadDCM(fixed_input, fixed_dest, 'fixedFile');
         

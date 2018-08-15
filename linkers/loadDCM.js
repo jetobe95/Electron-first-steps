@@ -24,14 +24,15 @@ function loadDCM(origin, destination, imgId){
     
     convert.on('message', function(message){
         console.log(message);
+        
+        var elemFile = document.getElementById(imgId);
+    
+        progessBarTimer(2500);
+
+        setTimeout(function(){
+            elemFile.src = destination;
+        }, 2400);
+        
     })
-    
-    var elemFile = document.getElementById(imgId);
-    
-    progessBarTimer(4500);
-    
-    setTimeout(function(){
-        elemFile.src = destination;
-    }, 4400);
     
 }

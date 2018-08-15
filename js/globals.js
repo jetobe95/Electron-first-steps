@@ -1,6 +1,6 @@
 //Variables
-const fixed_dest = "./data/fixed.png";
-const moving_dest = "./data/moving.png";
+var fixed_dest = "./data/fixed.png";
+var moving_dest = "./data/moving.png";
 var fixed_input = "";
 var moving_input = "";
 

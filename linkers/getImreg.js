@@ -15,12 +15,12 @@ function getImreg(){
         console.log(message);
     })
     
-    progessBarTimer(2500);
+    progessBarTimer(4000);
     
     setTimeout(function(){
         var myOutput = document.getElementById('myOutput');
         myOutput.src = './data/output.png';
         imageZoom("myOutput", "myresult");
-    }, 2400);
+    }, 4000);
     
 }
