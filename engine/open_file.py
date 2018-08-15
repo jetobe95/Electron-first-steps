@@ -17,5 +17,5 @@ try:
                            )
     print (path)
     
-except():
+except:
     pass
