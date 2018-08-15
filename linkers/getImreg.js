@@ -18,7 +18,9 @@ function getImreg(){
     progessBarTimer(2500);
     
     setTimeout(function(){
-        
+        var myOutput = document.getElementById('myOutput');
+        myOutput.src = './data/output.png';
+        imageZoom("myOutput", "myresult");
     }, 2400);
     
 }

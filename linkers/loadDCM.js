@@ -14,17 +14,24 @@ function loadDCM(origin, destination, imgId){
         args: [destination, origin]
     }
     
+    caches.open('v1').then(function(cache) {
+        cache.delete(destination).then(function(response) {
+            //someUIUpdateFunction();
+        });
+    })
+    
     var convert = new python('dcm_to_png.py', options);
     
     convert.on('message', function(message){
         console.log(message);
     })
     
-    progessBarTimer(2500);
+    var elemFile = document.getElementById(imgId);
+    
+    progessBarTimer(4500);
     
     setTimeout(function(){
-        var fixedFile = document.getElementById(imgId);
-        fixedFile.src = destination;
-    }, 2400);
+        elemFile.src = destination;
+    }, 4400);
     
 }

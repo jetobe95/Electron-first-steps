@@ -20,6 +20,11 @@ try:
     image_2d_scaled = (np.maximum(image_2d, 0) / image_2d.max()) * 255.0
     # Convert to uint
     image_2d_scaled = np.uint8(image_2d_scaled)
+    #Deleting
+    if os.path.exists(destination):
+        os.remove(destination)
+    else:
+        pass
     # Writing the PNG file
     # Write the PNG file
     with open(destination, 'wb') as png_file:

@@ -161,7 +161,7 @@ body{
 #fixedFile{
     width: 200px;
     height: 200px;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 .movingImage{
     background-color: rgba(126, 126, 126, 0.45);
@@ -172,7 +172,7 @@ body{
 #movingFile{
     width: 200px;
     height: 200px;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 
@@ -185,7 +185,32 @@ body{
     overflow-x: hidden;
     position: fixed;
 }
-.outputImage{
+
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 40px;
+    height: 40px;
+}
+
+.img-zoom-result {
+    border: 1px solid #d4d4d4;
+    /*set the size of the result div:*/
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    
+}
+/*.outputImage{
     background-color: rgba(126, 126, 126, 0.45);
     width: 200px;
     height: 200px;
@@ -207,12 +232,13 @@ body{
     height: 200px;
     border-radius: 6px;
 }
+*/
 .data{
     width: 110px;
     height: 200px;
     position: fixed;
     margin-left: 100px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
     z-index: 5;
     right: 0;
     top: 0;
