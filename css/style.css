@@ -23,7 +23,7 @@ body{
 .sidenav a, .dropdown-btn {
     padding: 14px 8px 14px 22px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #818181;
     display: block;
     border: none;
@@ -85,13 +85,19 @@ body{
     outline: none;
     width: 176px;
     overflow-x: hidden;
-    font-size: 16px;
+    font-size: 14px;
     color: #111;/*#F7F7F7;*/
     font-weight: 600;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
+}
+.reg_btn:hover{
+    background-color: #FF8080;
+}
+.reg_btn:active{
+    background-color: #c55050;
 }
 
 
