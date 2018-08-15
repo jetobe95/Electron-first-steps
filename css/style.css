@@ -9,7 +9,7 @@ body{
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 215px; /* Set the width of the sidebar */
+    width: 200px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -24,7 +24,7 @@ body{
     padding: 14px 8px 14px 22px;
     text-decoration: none;
     font-family: Verdana;
-    font-size: 15px;
+    font-size: 14px;
     color: #818181;
     display: block;
     border: none;
@@ -69,7 +69,7 @@ body{
 
 /* Style page content */
 .main {
-    margin-left: 215px; /* Same as the width of the sidebar */
+    margin-left: 200px; /* Same as the width of the sidebar */
     padding: 0px 0px;
     height: 100%;
     overflow-x: hidden;
@@ -81,11 +81,11 @@ body{
     display: block;
     bottom: 0;
     margin-bottom: 70px;
-    margin-left: 22px;
+    margin-left: 20px;
     background-color: #ff6b6b;
     border: none;
     outline: none;
-    width: 171px;
+    width: 160px;
     overflow-x: hidden;
     font-family: Verdana;
     font-size: 16px;
