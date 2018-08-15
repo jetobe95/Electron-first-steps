@@ -9,7 +9,7 @@ body{
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 220px; /* Set the width of the sidebar */
+    width: 215px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -69,8 +69,9 @@ body{
 
 /* Style page content */
 .main {
-    margin-left: 220px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+    margin-left: 215px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -79,21 +80,21 @@ body{
     position: absolute;
     display: block;
     bottom: 0;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     margin-left: 22px;
     background-color: #ff6b6b;
     border: none;
     outline: none;
-    width: 176px;
+    width: 171px;
     overflow-x: hidden;
     font-family: Verdana;
     font-size: 16px;
     color: #fff;/*#F7F7F7;*/
     font-weight: 10;
     text-align: center;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 3px;
 }
 .reg_btn:hover{
     background-color: #FF8080;
@@ -107,6 +108,13 @@ body{
     position: fixed;
     bottom: 0;
     overflow-x: hidden;
+    background-color: #202020;
+    width: 100%;
+    height: 35px;
+    z-index: 10;
+    border-top-style: solid;
+    border-top-color: #111;
+    border-top-width: 1px;
 }
 
 
