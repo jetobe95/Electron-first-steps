@@ -1,9 +1,13 @@
-
-function loadFixedImage(){
+/*
+Load a dcm file, convert it to png and show it in the img tag
+inputType: fixed or moving
+imgId: img tag id
+*/
+function loadDCM(inputType, imgId){
     var python = require('python-shell');
     var path = require('path')
     
-    var destination = "./data/fixed.png";
+    var destination = "./data/" + inputType + ".png";
     
     var options = {
         mode: 'text',
@@ -21,8 +25,10 @@ function loadFixedImage(){
     progessBarTimer(2500);
     
     setTimeout(function(){
-        var fixedFile = document.getElementById('fixedFile');
-        fixedFile.src = "./data/fixed.png";
+        var fixedFile = document.getElementById(imgId);
+        fixedFile.src = "./data/" + inputType + ".png";
     }, 2400);
     
 }
+
+lo
