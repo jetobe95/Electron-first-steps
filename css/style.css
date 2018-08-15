@@ -37,7 +37,7 @@ body{
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .dropdown-btn:hover{
+.sidenav a:hover, .dropdown-btn:hover, .inputFile:hover{
     color: #f1f1f1;
     background-color: #474747;
 }
@@ -72,21 +72,11 @@ body{
     z-index: 5;
     width: 200px;
 }
-.upload-btn-wrapper:hover{
-    color: #f1f1f1;
-    background-color: #fff;
-}
+
 .upload-btn-wrapper {
   position: relative;
   overflow: hidden;
   display: inline-block;
-}
-.upload-btn-wrapper input[type=file] {
-  font-size: 30px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
 }
 
 

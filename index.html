@@ -18,14 +18,12 @@
                     <button class="inputFile">Fixed image
                         <i class="fa fa-plus-square-o"></i>
                     </button>
-                    <input type="file" id="fixedInput" accept=".dcm" class="file"/>
                 </div>
                 <!--<a onclick="loadDCM('fixed', 'fixedFile')">Fixed image</a>-->
                 <div class="upload-btn-wrapper">
                     <button class="inputFile">Moving image
                         <i class="fa fa-plus-square-o"></i>
                     </button>
-                    <input type="file" id="movingInput" accept=".dcm" class="file"/>
                 </div>
             </div>
             
@@ -47,7 +45,7 @@
             </div>
             
             <center>
-                <button class="reg_btn" onclick="getImreg()">Registration</button>
+                <button class="reg_btn" onclick="openFile()">Registration</button>
             </center>
                 
         </div>
@@ -92,6 +90,7 @@
         <script src="js/style.js"></script>
         <script src="js/globals.js"></script>
         <script src="linkers/loadDCM.js"></script>
+        <script src="linkers/openFile.js"></script>
         <script src="linkers/getImreg.js"></script>
         
         
