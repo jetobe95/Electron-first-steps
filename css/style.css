@@ -117,4 +117,17 @@ body{
     border-top-width: 1px;
 }
 
+/* Progress bar */
+#myProgress {
+    width: 100%;
+    background-color: #202020;
+}
+#myBar {
+    width: 0%;
+    height: 3px;
+    position: fixed;
+    bottom: 0;
+    background-color: #ff6b6b;
+}
+
 
