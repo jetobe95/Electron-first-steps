@@ -71,8 +71,10 @@ body{
 .main {
     margin-left: 200px; /* Same as the width of the sidebar */
     padding: 0px 0px;
-    height: 100%;
+    height: 550px;
     overflow-x: hidden;
+    width: 780px;
+    background-image: url(../images/bg2.jpg);
 }
 
 /* Registration button */
