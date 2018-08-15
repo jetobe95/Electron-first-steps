@@ -1,4 +1,4 @@
-function openFile(){
+function openFixedFile(){
     var python = require('python-shell');
     var path = require('path')
     
@@ -14,9 +14,11 @@ function openFile(){
     open.on('message', function(message){
         abspath = message;
         
-        loadDCM('fixed', 'fixedFile', abspath);
+        fixed_input = abspath;
         
-    })
+        loadDCM(fixed_input.substring(0, fixed_input.length-1), fixed_dest, 'fixedFile');
+        
+    });
     
 
 }

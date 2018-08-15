@@ -15,13 +15,13 @@
             </button>
             <div class="dropdown-container">
                 <div class="upload-btn-wrapper">
-                    <button class="inputFile" onclick="openFile()">Fixed image
+                    <button class="inputFile" onclick="openFixedFile()">Fixed image
                         <i class="fa fa-plus-square-o"></i>
                     </button>
                 </div>
                 <!--<a onclick="loadDCM('fixed', 'fixedFile')">Fixed image</a>-->
                 <div class="upload-btn-wrapper">
-                    <button class="inputFile">Moving image
+                    <button class="inputFile" onclick="openMovingFile()">Moving image
                         <i class="fa fa-plus-square-o"></i>
                     </button>
                 </div>
@@ -52,7 +52,7 @@
 
         <!-- Page content -->
         <div class="main">
-            
+    
             <!-- Inputs content -->
             <div class="inputs">
                 <div class="fixedImage">
@@ -89,7 +89,8 @@
         <!-- Js scripts -->
         <script src="js/style.js"></script>
         <script src="js/globals.js"></script>
-        <script src="linkers/openFile.js"></script>
+        <script src="linkers/openFixedFile.js"></script>
+        <script src="linkers/openMovingFile.js"></script>
         <script src="linkers/loadDCM.js"></script>
         <script src="linkers/getImreg.js"></script>
         

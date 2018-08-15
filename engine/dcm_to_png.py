@@ -25,5 +25,5 @@ try:
     with open(destination, 'wb') as png_file:
         w = png.Writer(shape[1], shape[0], greyscale=True)
         w.write(png_file, image_2d_scaled)
-except:
-    pass
+except():
+    print('error')
