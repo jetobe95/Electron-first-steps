@@ -20,7 +20,7 @@ body{
 }
 
 /* The navigation menu links */
-.sidenav a, .dropdown-btn {
+.sidenav a, .dropdown-btn, .inputFile{
     padding: 12px 8px 12px 20px;
     text-decoration: none;
     font-family: Verdana;
@@ -37,7 +37,7 @@ body{
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .dropdown-btn:hover {
+.sidenav a:hover, .dropdown-btn:hover, .inputFile:hover{
     color: #f1f1f1;
     background-color: #474747;
 }
@@ -64,6 +64,28 @@ body{
     float: right;
     padding-right: 8px;
     overflow-x: hidden;
+}
+
+/* Style the input file tag */
+.inputFile{
+    background-color: #262626;
+    z-index: 5;
+}
+.upload-btn-wrapper:hover{
+    color: #f1f1f1;
+    background-color: #fff;
+}
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.upload-btn-wrapper input[type=file] {
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
 
 

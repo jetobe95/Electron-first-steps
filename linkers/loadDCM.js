@@ -30,5 +30,3 @@ function loadDCM(inputType, imgId){
     }, 2400);
     
 }
-
-lo

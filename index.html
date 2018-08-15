@@ -14,7 +14,11 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-container">
-                <a onclick="loadDCM('fixed', 'fixedFile')">Fixed image</a>
+                <div class="upload-btn-wrapper">
+                    <button class="inputFile">Fixed image</button>
+                    <input type="file" id="fixedInput"/>
+                </div>
+                <!--<a onclick="loadDCM('fixed', 'fixedFile')">Fixed image</a>-->
                 <a onclick="loadDCM('moving', 'movingFile')">Moving image</a>
             </div>
             
