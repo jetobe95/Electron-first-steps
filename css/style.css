@@ -1,8 +1,8 @@
 body{
     padding: 0;
     margin: 0;
-    background: blue;
-    font-family: Arial;
+    background: #cccccc;
+    font-family: Verdana;
     overflow-x: hidden;
 }
 
@@ -21,9 +21,9 @@ body{
 
 /* The navigation menu links */
 .sidenav a, .dropdown-btn {
-    padding: 14px 8px 14px 32px;
+    padding: 14px 8px 14px 22px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: #818181;
     display: block;
     border: none;
@@ -43,8 +43,11 @@ body{
 
 /* Add an active class to the active dropdown button */
 .active {
-    background-color: green;
+    background-color: #ff6b6b;
     color: white;
+}
+.active:hover{
+    background-color: #ff6b6b;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -71,9 +74,24 @@ body{
 }
 
 /* Registration button */
-.reg_btn {
-    position: fixed;
+.sidenav .reg_btn {
+    position: absolute;
+    display: block;
     bottom: 0;
+    margin-bottom: 50px;
+    margin-left: 22px;
+    background-color: #ff6b6b;
+    border: none;
+    outline: none;
+    width: 176px;
+    overflow-x: hidden;
+    font-size: 16px;
+    color: #111;/*#F7F7F7;*/
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
 }
 
 
