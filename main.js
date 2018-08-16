@@ -10,6 +10,7 @@ app.on('ready',function(){
 	mainWindow = new BrowserWindow({
         width: 975, 
         height: 610,
+        icon: __dirname + '/images/icono.ico', 
         backgroundColor: '#d9d9d9',
         resizable: false
     });
