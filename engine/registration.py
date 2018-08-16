@@ -46,3 +46,9 @@ if not "SITK_NOSHOW" in os.environ:
     nda = Sitk.GetArrayViewFromImage(cimg)
     my_pil = Image.fromarray(nda)
     my_pil.save('./data/output.png')
+    
+    text_iteration = " Iteration: {0}".format(R.GetOptimizerIteration())
+    text_metric = " Metric value: {0}".format(R.GetMetricValue())
+    text_out = text_iteration + " _f_ " + text_metric
+    print(text_out)
+    

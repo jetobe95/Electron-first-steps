@@ -11,16 +11,22 @@ function getImreg(){
     
     var imreg = new python('registration.py', options);
     
+    var text_data = undefined;
+    
     imreg.on('message', function(message){
-        console.log(message);
+        text_data = message;
+        textSplit = text_data.split("_f_");
+        text_data = textSplit[0] + "<br>" + textSplit[1];
     })
     
     progessBarTimer(4000);
     
     setTimeout(function(){
         var myOutput = document.getElementById('myOutput');
+        var dataElement = document.getElementById('outputData');
         myOutput.src = './data/output.png';
         imageZoom("myOutput", "myresult");
+        dataElement.innerHTML = text_data;
     }, 4000);
     
 }
