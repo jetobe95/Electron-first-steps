@@ -44,11 +44,11 @@ body{
 
 /* Add an active class to the active dropdown button */
 .active {
-    background-color: #ff6b6b;
+    background-color: #2857a9;
     color: white;
 }
 .active:hover{
-    background-color: #ff6b6b;
+    background-color: #2857a9; /* COLOR #ff6b6b */
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -96,7 +96,7 @@ body{
     bottom: 0;
     margin-bottom: 70px;
     margin-left: 20px;
-    background-color: #ff6b6b;
+    background-color: #2857a9;
     border: none;
     outline: none;
     width: 160px;
@@ -111,10 +111,10 @@ body{
     border-radius: 3px;
 }
 .reg_btn:hover{
-    background-color: #FF8080;
+    background-color: #0062a9;
 }
 .reg_btn:active{
-    background-color: #c55050;
+    background-color: #0f306a;
 }
 
 
@@ -141,7 +141,7 @@ body{
     height: 3px;
     position: fixed;
     bottom: 0;
-    background-color: #ff6b6b;
+    background-color: #2857a9;
 }
 
 /*Inputs div*/
