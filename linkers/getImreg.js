@@ -16,7 +16,7 @@ function getImreg(){
     imreg.on('message', function(message){
         text_data = message;
         textSplit = text_data.split("_f_");
-        text_data = textSplit[0] + "<br>" + textSplit[1];
+        text_data = textSplit[0] + "<br>" + textSplit[1] + "<span>|</span>";
     })
     
     progessBarTimer(4000);

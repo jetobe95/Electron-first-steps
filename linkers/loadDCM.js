@@ -23,7 +23,7 @@ function loadDCM(origin, destination, imgId){
     var convert = new python('dcm_to_png.py', options);
     
     convert.on('message', function(message){
-        console.log(message);
+        //console.log(message);
         
         var elemFile = document.getElementById(imgId);
     

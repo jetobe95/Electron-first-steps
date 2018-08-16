@@ -256,6 +256,13 @@ body{
     justify-content: center;
     font-family: monospace;
     word-wrap: break-word;
+    cursor: default;
+}
+span{
+  animation: blink 1s infinite;
+}
+@keyframes blink{
+  to{opacity: .0;}
 }
 
 
